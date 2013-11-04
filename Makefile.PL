@@ -17,6 +17,16 @@ my %params = (
         'Test::More'              => '0.47',
         'Test::UseAllModules'     => '0.10',
     },
+    META_MERGE => {
+        'meta-spec' => { version => 2 },
+        resources => {
+            repository => {
+                type => 'git',
+                url  => 'https://github.com/charsbar/archive-any-lite.git',
+                web  => 'https://github.com/charsbar/archive-any-lite',
+            },
+        },
+    },
 );
 
 my $eumm = $ExtUtils::MakeMaker::VERSION;
